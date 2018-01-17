@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>ZYBO Controller</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/mystyle.css">
+	</head>
+	<body>
+		<main class="container">
+			<h1>ZYBO Controller</h1>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>LED</h3>
+					<button type="button" class="btn btn-primary" id="button-led0" name="button-led0" onClick="pressButton(id)">LED0</button>
+					<button type="button" class="btn btn-primary" id="button-led1" name="button-led1" onClick="pressButton(id)">LED1</button>
+					<button type="button" class="btn btn-primary" id="button-led2" name="button-led2" onClick="pressButton(id)">LED2</button>
+					<button type="button" class="btn btn-primary" id="button-led3" name="button-led3" onClick="pressButton(id)">LED3</button>
+					<button type="button" class="btn btn-primary" id="button-led4" name="button-led4" onClick="pressButton(id)">LED4 (PS)</button>
+				</div>
+				<div class="col-sm-4">
+					<h3>Color LED 5 (PWM)</h3>
+					R: <input type="range" id="range-led5-r" name="range-led5-r" value="0" min="0" max="100" step="1" onchange="sendStatus()"><br>
+					G: <input type="range" id="range-led5-g" name="range-led5-g" value="0" min="0" max="100" step="1" onchange="sendStatus()"><br>
+					B: <input type="range" id="range-led5-b" name="range-led5-b" value="0" min="0" max="100" step="1" onchange="sendStatus()"><br>
+				</div>
+				<div class="col-sm-4">
+					<h3>Color LED 6 (PWM)</h3>
+					R: <input type="range" id="range-led6-r" name="range-led6-r" value="0" min="0" max="100" step="1" onchange="sendStatus()"><br>
+					G: <input type="range" id="range-led6-g" name="range-led6-g" value="0" min="0" max="100" step="1" onchange="sendStatus()"><br>
+					B: <input type="range" id="range-led6-b" name="range-led6-b" value="0" min="0" max="100" step="1" onchange="sendStatus()"><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Button</h3>
+					<button type="button" class="btn btn-primary" id="button-btn0" name="button-btn0">BTN0</button>
+					<button type="button" class="btn btn-primary" id="button-btn1" name="button-btn1">BTN1</button>
+					<button type="button" class="btn btn-primary" id="button-btn2" name="button-btn2">BTN2</button>
+					<button type="button" class="btn btn-primary" id="button-btn3" name="button-btn3">BTN3</button>
+				</div>
+				<div class="col-sm-6">
+					<h3>Switch</h3>
+					<button type="button" class="btn btn-primary" id="button-sw0" name="button-sw0">SW0</button>
+					<button type="button" class="btn btn-primary" id="button-sw1" name="button-sw1">SW1</button>
+					<button type="button" class="btn btn-primary" id="button-sw2" name="button-sw2">SW2</button>
+					<button type="button" class="btn btn-primary" id="button-sw3" name="button-sw3">SW3</button>
+				</div>
+			</div>
+		</main>
+		
+		<!-- load script files -->
+		<script type="text/javascript" src="static/js/init.js" charset="utf-8"></script>
+		<script type="text/javascript" src="static/js/main.js" charset="utf-8"></script>
+	</body>
+</html>

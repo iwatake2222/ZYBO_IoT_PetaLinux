@@ -1,0 +1,16 @@
+document.getElementById("button-led0").classList.add('btn-primary');
+document.getElementById("button-led0").classList.remove('btn-success');
+document.getElementById("button-led1").classList.add('btn-primary');
+document.getElementById("button-led1").classList.remove('btn-success');
+document.getElementById("button-led2").classList.add('btn-primary');
+document.getElementById("button-led2").classList.remove('btn-success');
+document.getElementById("button-led3").classList.add('btn-primary');
+document.getElementById("button-led3").classList.remove('btn-success');
+document.getElementById("button-led4").classList.add('btn-primary');
+document.getElementById("button-led4").classList.remove('btn-success');
+document.getElementById("range-led5-r").value = 0;
+document.getElementById("range-led5-g").value = 0;
+document.getElementById("range-led5-b").value = 0;
+document.getElementById("range-led6-r").value = 0;
+document.getElementById("range-led6-g").value = 0;
+document.getElementById("range-led6-b").value = 0;
